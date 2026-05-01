@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Capistrano Farms</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <section class="hero contact-hero">
+      <header class="site-header">
+        <a href="index.html" class="logo">Capistrano Farms</a>
+
+        <nav>
+          <a href="index.html#inventory">Inventory</a>
+          <a href="index.html#why-us">Why Us</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </header>
+
+      <div class="hero-content">
+        <p class="eyebrow">Visit or Contact Us</p>
+        <h1>Contact Us</h1>
+        <p>We’d love to hear from you.</p>
+      </div>
+    </section>
+
+    <section class="section contact">
+      <h2>We’d Love to Hear From You</h2>
+
+      <form
+        class="contact-form"
+        action="https://formspree.io/f/mkoynzyj"
+        method="POST"
+      >
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="button primary">Send Message</button>
+      </form>
+
+      <div class="contact-box">
+        <p><strong>Phone:</strong> (XXX) XXX-XXXX</p>
+        <p><strong>Location:</strong> Rosharon, Texas</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Capistrano Farms. Rosharon, Texas.</p>
+    </footer>
+  </body>
+</html>

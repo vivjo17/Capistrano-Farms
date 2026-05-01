@@ -1,0 +1,406 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  color: #223326;
+  background: #f7f3e8;
+  line-height: 1.6;
+}
+
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 7%;
+  background: transparent;
+}
+
+.site-header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(18, 43, 23, 0.5), rgba(18, 43, 23, 0));
+  z-index: -1;
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 24px;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+nav a:hover {
+  color: #d7c48c;
+}
+
+.hero {
+  position: relative;
+  min-height: 82vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 90px 7%;
+  color: white;
+  background:
+    linear-gradient(90deg, rgba(18, 43, 23, 0.88), rgba(18, 43, 23, 0.55)),
+    url("../images/Live\ Oak\ arch\ .jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #d7c48c;
+}
+
+.eyebrow.dark {
+  color: #7d6a2e;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  line-height: 1.15;
+  letter-spacing: -0.3px;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  margin-bottom: 14px;
+}
+
+h2 {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-size: 1.25rem;
+  color: #1f3b24;
+}
+
+.hero p {
+  max-width: 520px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  opacity: 0.95;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 800;
+  transition: 0.2s ease;
+}
+
+.button.primary {
+  background: #d7c48c;
+  color: #1f3b24;
+}
+
+.button.secondary {
+  border: 2px solid white;
+  color: white;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.section {
+  padding: 70px 7%;
+}
+
+.section-intro {
+  max-width: 640px;
+  margin-bottom: 12px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+  margin-top: 40px;
+}
+
+.card {
+  background: white;
+  padding: 32px;
+  border-radius: 18px;
+  box-shadow: 0 18px 45px rgba(31, 59, 36, 0.12);
+  border: 1px solid rgba(31, 59, 36, 0.08);
+}
+
+.card span {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 14px;
+}
+
+.alt {
+  background: #e7eadc;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 54px;
+  align-items: center;
+}
+
+.checklist {
+  list-style: none;
+  margin: 0;
+  background: white;
+  padding: 34px;
+  border-radius: 18px;
+  box-shadow: 0 18px 45px rgba(31, 59, 36, 0.1);
+}
+
+.checklist li {
+  margin-bottom: 16px;
+  padding-left: 34px;
+  position: relative;
+  font-weight: 800;
+}
+
+.checklist li:last-child {
+  margin-bottom: 0;
+}
+
+.checklist li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: -2px;
+  width: 24px;
+  height: 24px;
+  background: #1f3b24;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.cta-banner {
+  margin: 60px 4%;
+  padding: 56px;
+  border-radius: 24px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(135deg, #1f3b24, #375f3a);
+}
+
+.cta-banner p {
+  margin-bottom: 26px;
+}
+
+.cta-banner h2 {
+  color: white;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-box {
+  display: inline-block;
+  margin-top: 28px;
+  padding: 32px 44px;
+  background: white;
+  border-radius: 18px;
+  text-align: left;
+  box-shadow: 0 18px 45px rgba(31, 59, 36, 0.12);
+}
+
+.contact-box p {
+  margin: 10px 0;
+}
+
+footer {
+  padding: 28px 7%;
+  background: #1f3b24;
+  color: white;
+  text-align: center;
+}
+
+/*Contact Page */
+.page-hero {
+  position: relative;
+  min-height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 90px 7%;
+  text-align: center;
+  color: white;
+  background:
+    linear-gradient(rgba(18, 43, 23, 0.55), rgba(18, 43, 23, 0.55)),
+    url("../images/Live\ Oak\ and\ Flowers.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.page-hero-content {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.page-hero h1 {
+  color: white;
+}
+
+.page-hero p {
+  max-width: 520px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  opacity: 0.95;
+}
+
+.contact-form {
+  max-width: 620px;
+  margin: 34px auto 0;
+  padding: 32px;
+  background: white;
+  border-radius: 18px;
+  text-align: left;
+  box-shadow: 0 18px 45px rgba(31, 59, 36, 0.12);
+}
+
+.form-row {
+  margin-bottom: 18px;
+}
+
+.form-row label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 700;
+  color: #1f3b24;
+}
+
+.form-row input,
+.form-row textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid rgba(31, 59, 36, 0.25);
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+  outline: none;
+  border-color: #1f3b24;
+}
+
+@media (max-width: 800px) {
+  /* Layout */
+  .site-header {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  nav a {
+    margin: 0 8px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 80px 7%;
+  }
+
+  .cards,
+  .split {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-banner {
+    margin: 0;
+    border-radius: 0;
+    padding: 48px 7%;
+  }
+
+  .contact-box {
+    width: 100%;
+  }
+
+  /* Typography */
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .section-intro {
+    font-size: 1rem;
+  }
+
+  /* Spacing */
+  .hero-buttons {
+    margin-top: 24px;
+  }
+
+  .section {
+    padding: 60px 7%;
+  }
+}

@@ -309,7 +309,7 @@ footer {
   min-height: 65vh;
   display: flex;
   background:
-    linear-gradient(rgba(18, 43, 23, 0.55), rgba(18, 43, 23, 0.55)),
+    linear-gradient(rgba(18, 43, 23, 0.22), rgba(18, 43, 23, 0.22)),
     url("../images/Live\ Oak\ and\ Flowers.jpg");
   background-size: cover;
   background-position: center;
@@ -360,7 +360,7 @@ footer {
   justify-content: center;
   padding: 120px 7% 70px;
   background:
-    linear-gradient(rgba(18, 43, 23, 0.55), rgba(18, 43, 23, 0.55)),
+    linear-gradient(rgba(18, 43, 23, 0.22), rgba(18, 43, 23, 0.22)),
     url("../images/Live\ Oak.jpg");
   background-size: cover;
   background-position: center;

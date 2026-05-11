@@ -57,7 +57,7 @@ nav a:hover {
 
 .hero {
   position: relative;
-  min-height: 82vh;
+  min-height: 79vh;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -153,7 +153,7 @@ h3 {
 }
 
 .section {
-  padding: 70px 7%;
+  padding: 80px 7%;
 }
 
 .section-intro {
@@ -281,37 +281,14 @@ footer {
 }
 
 /*Contact Page */
-.page-hero {
-  position: relative;
+.contact-hero {
   min-height: 65vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 90px 7%;
-  text-align: center;
-  color: white;
   background:
     linear-gradient(rgba(18, 43, 23, 0.55), rgba(18, 43, 23, 0.55)),
     url("../images/Live\ Oak\ and\ Flowers.jpg");
   background-size: cover;
   background-position: center;
-}
-
-.page-hero-content {
-  max-width: 760px;
-  margin: 0 auto;
-}
-
-.page-hero h1 {
-  color: white;
-}
-
-.page-hero p {
-  max-width: 520px;
-  margin: 0 auto;
-  font-size: 1.05rem;
-  line-height: 1.5;
-  opacity: 0.95;
 }
 
 .contact-form {
@@ -351,6 +328,59 @@ footer {
   border-color: #1f3b24;
 }
 
+/* Us Page */
+.hero.why-hero {
+  min-height: 50vh;
+  padding: 120px 7% 70px;
+  background:
+    linear-gradient(rgba(18, 43, 23, 0.55), rgba(18, 43, 23, 0.55)),
+    url("../images/Live\ Oak.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.about-text {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 1.12rem;
+  line-height: 1.8;
+}
+
+.about-photo-cta {
+  margin: 20px 7% 90px;
+  position: relative;
+}
+
+.about-photo-cta img {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+  border-radius: 24px;
+  display: block;
+  box-shadow: 0 10px 25px rgba(31, 59, 36, 0.12);
+  filter: brightness(0.85) saturate(0.95);
+}
+
+.about-cta-card {
+  max-width: 520px;
+  margin: -90px auto 0;
+  position: relative;
+  padding: 34px;
+  background: #fffaf0;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(31, 59, 36, 0.18);
+}
+
+.about-cta-card h2 {
+  margin-bottom: 10px;
+}
+
+.about-cta-card p {
+  margin-bottom: 22px;
+}
+
 @media (max-width: 800px) {
   /* Layout */
   .site-header {
@@ -380,6 +410,15 @@ footer {
 
   .contact-box {
     width: 100%;
+  }
+
+  .about-photo-cta img {
+    height: 320px;
+  }
+
+  .about-cta-card {
+    margin-top: -60px;
+    padding: 28px;
   }
 
   /* Typography */

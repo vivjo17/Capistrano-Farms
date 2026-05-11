@@ -443,3 +443,64 @@ footer {
     padding: 60px 7%;
   }
 }
+
+@media (max-width: 600px) {
+  .site-header {
+    padding: 20px 5%;
+    gap: 12px;
+  }
+
+  .logo {
+    font-size: 1.15rem;
+  }
+
+  nav {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 130px 6% 70px;
+    background-position: center;
+  }
+
+  h1 {
+    font-size: 2.1rem;
+    line-height: 1.1;
+  }
+
+  .hero p {
+    max-width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button {
+    width: 100%;
+    max-width: 240px;
+    text-align: center;
+  }
+
+  .cards {
+    gap: 18px;
+  }
+
+  .card,
+  .checklist,
+  .contact-form,
+  .contact-box {
+    padding: 24px;
+  }
+}

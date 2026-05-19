@@ -157,37 +157,53 @@ h3 {
 }
 
 .quote-section {
-  padding: 70px 7%;
-  background: #f7f3e8
+  padding: 90px 7%;
+  background: #f7f3e8;
   text-align: center;
 }
 
 .quote-content {
-  max-width: 760px;
+  max-width: 900px;
   margin: 0 auto;
-}
-
-.quote-mark {
-  font-size: 3rem;
-  line-height: 1;
-  margin-bottom: 8px;
-  color: #cbb67a;
-  font-family: Georgia, serif;
 }
 
 .quote-section blockquote {
   margin: 0;
-  font-size: clamp(1.8rem, 3vw, 2.8rem);
-  line-height: 1.4;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2.4rem, 4vw, 4rem);
+  line-height: 1.15;
   font-weight: 600;
   color: #1f3b24;
-  letter-spacing: -0.5px;
+  position: relative;
+  display: inline-block;
+  padding: 0 70px;
+}
+
+.quote-section blockquote::before,
+.quote-section blockquote::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 5rem;
+  color: #cbb67a;
+  font-family: Georgia, serif;
+  line-height: 1;
+}
+
+.quote-section blockquote::before {
+  content: "“";
+  left: 0;
+}
+
+.quote-section blockquote::after {
+  content: "”";
+  right: 0;
 }
 
 .quote-author {
-  margin-top: 18px;
+  margin-top: 28px;
   font-size: 0.82rem;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   color: #8b7740;
 }
@@ -238,23 +254,6 @@ h3 {
   font-size: 0.85rem;
 }
 
-.cta-banner {
-  margin: 20px 4% 40px;
-  padding: 56px;
-  border-radius: 24px;
-  text-align: center;
-  color: white;
-  background: linear-gradient(135deg, #1f3b24, #375f3a);
-}
-
-.cta-banner p {
-  margin-bottom: 26px;
-}
-
-.cta-banner h2 {
-  color: white;
-}
-
 .contact {
   text-align: center;
 }
@@ -271,7 +270,7 @@ h3 {
 }
 
 .contact-box {
-    width: fit-content;
+  width: fit-content;
   max-width: 520px;
   margin: 28px auto 0;
   padding: 30px 38px;

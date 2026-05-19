@@ -212,13 +212,13 @@ h3 {
 .quote-section blockquote::before {
   content: "“";
   left: 0;
-  top: 26%;
+  top: 18%;
 }
 
 .quote-section blockquote::after {
   content: "”";
   right: 0;
-  top: 72%;
+  top: 82%;
 }
 
 .quote-author {

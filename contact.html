@@ -7,6 +7,10 @@
     <link rel="canonical" href="https://capistranofarm.com/contact.html" />
     <meta property="og:url" content="https://capistranofarm.com/contact.html" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -22,38 +26,66 @@
       </header>
     </section>
 
-    <section class="section contact">
-      <p class="eyebrow">Visit or Contact Us</p>
-      <h2>Send Us a Message</h2>
-
-      <form
-        class="contact-form"
-        action="https://formspree.io/f/mkoynzyj"
-        method="POST"
-      >
-        <div class="form-row">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required />
-        </div>
-
-        <div class="form-row">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-
-        <div class="form-row">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-
-        <button type="submit" class="button primary">Send Message</button>
-      </form>
-
-      <div class="contact-box">
-        <p><strong>Phone:</strong> (281) 889-8238</p>
+    <section class="section contact contact-page">
+      <div class="contact-page-header">
+        <p class="eyebrow dark">Get in Touch</p>
+        <h2>Tell us what you are looking for.</h2>
         <p>
-          <strong>Location:</strong> 212 County Road 56 Rosharon, Texas 77583
+          Whether you need one shade tree or several trees for a larger
+          landscape, we would be happy to help you take the next step.
         </p>
+      </div>
+
+      <div class="contact-layout">
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/mkoynzyj"
+          method="POST"
+        >
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+
+          <button type="submit" class="button primary">Send Message</button>
+        </form>
+
+        <aside class="contact-box contact-details" aria-label="Farm details">
+          <img
+            src="assets/images/Cows and Oak White  copy.png"
+            alt="Capistrano Farms logo"
+            class="contact-logo"
+          />
+
+          <p class="eyebrow dark">Farm Details</p>
+          <h3>Capistrano Farms</h3>
+
+          <p>
+            <strong>Phone</strong>
+            <a href="tel:+12818898238">(281) 889-8238</a>
+          </p>
+
+          <p>
+            <strong>Location</strong>
+            212 County Road 56<br />
+            Rosharon, Texas 77583
+          </p>
+
+          <p class="contact-note">
+            Please reach out before visiting so we can help with directions and
+            current availability.
+          </p>
+        </aside>
       </div>
     </section>
 

@@ -1,3 +1,6 @@
+/* =========================
+   Base
+========================= */
 * {
   box-sizing: border-box;
 }
@@ -13,6 +16,10 @@ body {
   background: #f7f3e8;
   line-height: 1.6;
 }
+
+/* =========================
+   Shared Typography
+========================= */
 
 .site-header {
   position: absolute;
@@ -105,6 +112,10 @@ h3 {
   color: #1f3b24;
 }
 
+/* =========================
+   Shared Components
+========================= */
+
 .hero-buttons {
   display: flex;
   justify-content: center;
@@ -145,33 +156,40 @@ h3 {
   margin-bottom: 12px;
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 26px;
-  margin-top: 40px;
+.quote-section {
+  padding: 70px 7%;
+  background: #f7f3e8
+  text-align: center;
 }
 
-.card {
-  background: #fffdf7;
-  padding: 36px;
-  border-radius: 22px;
-  border: 1px solid rgba(31, 59, 36, 0.1);
-  box-shadow: 0 16px 40px rgba(31, 59, 36, 0.1);
+.quote-content {
+  max-width: 760px;
+  margin: 0 auto;
 }
 
-.card h3 {
-  margin-bottom: 10px;
+.quote-mark {
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom: 8px;
+  color: #cbb67a;
+  font-family: Georgia, serif;
 }
 
-.card p {
-  color: #4c5a4c;
+.quote-section blockquote {
+  margin: 0;
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  line-height: 1.4;
+  font-weight: 600;
+  color: #1f3b24;
+  letter-spacing: -0.5px;
 }
 
-.card span {
-  display: block;
-  font-size: 2rem;
-  margin-bottom: 14px;
+.quote-author {
+  margin-top: 18px;
+  font-size: 0.82rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #8b7740;
 }
 
 .alt {
@@ -181,11 +199,12 @@ h3 {
 .split {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 54px;
+  gap: 80px;
   align-items: center;
 }
 
 .checklist {
+  max-width: 620px;
   list-style: none;
   margin: 0;
   background: white;
@@ -252,9 +271,10 @@ h3 {
 }
 
 .contact-box {
-  display: inline-block;
-  margin-top: 28px;
-  padding: 32px 44px;
+    width: fit-content;
+  max-width: 520px;
+  margin: 28px auto 0;
+  padding: 30px 38px;
   background: white;
   border-radius: 18px;
   text-align: left;
@@ -262,7 +282,11 @@ h3 {
 }
 
 .contact-box p {
-  margin: 10px 0;
+  margin: 0 0 14px;
+}
+
+.contact-box .button {
+  margin-top: 4px;
 }
 
 footer {
@@ -271,6 +295,10 @@ footer {
   color: white;
   text-align: center;
 }
+
+/* =========================
+   Home Page
+========================= */
 
 .nursery-intro {
   padding: 62px 7% 72px;
@@ -300,10 +328,6 @@ footer {
   color: #4c5a4c;
 }
 
-.hero-buttons {
-  margin-top: 34px;
-}
-
 .nursery-intro .hero-buttons {
   margin-top: 28px;
 }
@@ -313,7 +337,9 @@ footer {
   color: #1f3b24;
 }
 
-/*Contact Page */
+/* =========================
+   Contact Page
+========================= */
 .contact-hero {
   min-height: 65vh;
   display: flex;
@@ -361,7 +387,9 @@ footer {
   border-color: #1f3b24;
 }
 
-/* About Page */
+/* =========================
+   About Page
+========================= */
 .hero.why-hero {
   min-height: 50vh;
   display: flex;
@@ -429,6 +457,9 @@ footer {
   line-height: 1.9;
 }
 
+/* =========================
+   Responsive
+========================= */
 @media (max-width: 600px) {
   .site-header {
     padding: 18px 5%;
@@ -536,16 +567,10 @@ footer {
     font-size: 1.08rem;
   }
 
-  .cards,
   .split {
     grid-template-columns: 1fr;
   }
 
-  .cards {
-    gap: 18px;
-  }
-
-  .card,
   .checklist,
   .contact-form,
   .contact-box {

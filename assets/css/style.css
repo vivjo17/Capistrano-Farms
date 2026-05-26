@@ -312,6 +312,109 @@ h3 {
   margin: 12px auto 0;
 }
 
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 18px 0 12px;
+}
+
+.social-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 112px;
+  min-height: 38px;
+  padding: 8px 13px;
+  border: 2px solid rgba(31, 59, 36, 0.18);
+  border-radius: 999px;
+  color: #1f3b24;
+  background: #f7f3e8;
+  font-size: 0.78rem;
+  font-weight: 800;
+  line-height: 1;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.social-icon {
+  width: 17px;
+  height: 17px;
+  margin-right: 7px;
+  fill: currentColor;
+  stroke: currentColor;
+  stroke-width: 1.8;
+}
+
+.social-button:hover {
+  transform: translateY(-2px);
+  border-color: #1f3b24;
+  background: #1f3b24;
+  color: white;
+}
+
+.social-button.facebook .social-icon {
+  stroke: none;
+}
+
+.social-button.instagram .social-icon {
+  fill: none;
+}
+
+.social-button.instagram .social-icon circle:last-child {
+  fill: currentColor;
+  stroke: none;
+}
+
+.home-contact-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.home-contact-actions .button {
+  margin: 0;
+}
+
+.home-contact-actions .social-links {
+  flex-wrap: nowrap;
+  margin: 0;
+}
+
+.home-contact-actions .social-button {
+  width: 42px;
+  min-width: 42px;
+  min-height: 42px;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.home-contact-actions .social-icon,
+.contact-social-links .social-icon {
+  margin-right: 0;
+}
+
+.contact-social-links {
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  margin: 0 0 22px;
+}
+
+.contact-social-links .social-button {
+  width: 42px;
+  min-width: 42px;
+  min-height: 42px;
+  padding: 0;
+  border-radius: 50%;
+}
+
 footer {
   padding: 28px 7%;
   background: #1f3b24;
@@ -803,5 +906,9 @@ footer {
   .contact-page .contact-form,
   .contact-page .contact-box {
     padding: 24px;
+  }
+
+  .contact-social-links {
+    margin-bottom: 18px;
   }
 }
